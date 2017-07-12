@@ -1,0 +1,36 @@
+import java.util.*;
+class Solution
+{
+	static int w1=1,w2=-1,t=1;
+	static int w3=1 ,w4=1,t1=1;
+	public static void main(String args[])
+	{
+		int test=0,test1=0;
+		int sum=0;
+		int total=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter values for x1 and x2 in binary:");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		sum=(a*w1)+(b*w2);					
+		if(sum>=t)
+		{
+			test=1;
+		}
+		else
+		{
+			test=0;
+		}	
+		total=(a*w3)+(b*w4);				
+		if(total>=t)
+		{
+			test1=1;
+		}
+		else
+		{
+			test1=0;
+		}				
+		System.out.println("Logical AND-NOT of x1 and x2 is:"+test);
+		System.out.println("Logical XOR of x1 and x2 is:"+test1);
+	}
+}
